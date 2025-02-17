@@ -7,13 +7,13 @@ async function getRecipes() {
         return;
     }
 
-    const apiKey = 'https://api.spoonacular.com/recipes/complexSearch'; // Replace with your Spoonacular API key
+    const apiKey = 'https://api.spoonacular.com/food/customFoods/add'; // Replace with your Spoonacular API key
     const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&number=5&apiKey=${apiKey}`;
 
     try {
         const response = await fetch(url);
         const data = await response.json();
-
+        POST 
         displayRecipes(data);
     } catch (error) {
         console.error('Error fetching data:', error);
