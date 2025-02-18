@@ -7,7 +7,7 @@ async function getRecipes() {
         return;
     }
 
-    const apiKey = '63964882c83844d19f7b3f56b96a1b9a'; // Replace with your Spoonacular API key
+    const apiKey = '63964882c83844d19f7b3f56b96a1b9a'; // 
     const ingredients = "tomato,cheese,basil";
     const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&number=5&apiKey=${apiKey}`;
 
